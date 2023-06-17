@@ -20,11 +20,11 @@ We must note that this form of anomalous text detection is not perfect, and as s
 
 ## Anomaly Detection with Persistent Homology of Hidden States
 
-We also perform the same persistent homology analysis with layer outputs (hidden states) of texts, forming persistent diagrams of several baseline texts, computing their Fréchet mean persistence diagram, and then comparing some new potentially anomalous texts to the Fréchet mean of the baseline texts. This is done in [this notebook](https://github.com/Amelie-Schreiber/anomaly_detection_persistent_homology/blob/main/anomaly_detection_xlm_roberta_large_english_layer_outputs.ipynb) for example. 
+We also perform the same persistent homology analysis with layer outputs (hidden states) of texts, forming persistent diagrams of several baseline texts, computing their Fréchet mean persistence diagram, and then comparing some new potentially anomalous texts to the Fréchet mean of the baseline texts. This is done in [this notebook](https://github.com/Amelie-Schreiber/anomaly_detection_persistent_homology/blob/main/anomaly_detection_xlm_roberta_large_english_layer_outputs.ipynb) for example. We also should mention that comparing different layers' performance at anomaly detection is important. We might want to run the same analysis for all layers, and then look at the classification of anomalous texts on average. However, we are restricted by computational resources at the moment. 
 
 ## Anomaly Detection at the Level of Attention Probability Distributions
 
-Note, we can perform a very similar analysis at the level of the attention probability distribution (computed from the softmax of the attention matrix), using the Jensen-Shannon distance metric on probability distributions. This provide a much lower level analysis than using the context vectors or the hidden states. 
+Note, we can perform a very similar analysis at the level of the attention probability distribution (computed from the softmax of the attention matrix), using the Jensen-Shannon distance metric on probability distributions. This provide a much lower level analysis than using the context vectors or the hidden states. Again, looking at the average behavior over all attention heads would be important. 
 
 ## Next Steps
 
