@@ -22,6 +22,10 @@ We must note that this form of anomalous text detection is not perfect, and as s
 
 We also perform the same persistent homology analysis with layer outputs (hidden states) of texts, forming persistent diagrams of several baseline texts, computing their Fréchet mean persistence diagram, and then comparing some new potentially anomalous texts to the Fréchet mean of the baseline texts. This is done in [this notebook](https://github.com/Amelie-Schreiber/anomaly_detection_persistent_homology/blob/main/anomaly_detection_xlm_roberta_large_english_layer_outputs.ipynb) for example. 
 
+## Anomaly Detection at the Level of Attention Probability Distributions
+
+Note, we can perform a very similar analysis at the level of the attention probability distribution (computed from the softmax of the attention matrix), using the Jensen-Shannon distance metric on probability distributions. This provide a much lower level analysis than using the context vectors or the hidden states. 
+
 ## Next Steps
 
 The next obvious thing to do would be to perform this analysis on all attention heads, and then determine what percentage of them classifies a given text as anomalous. This can help us better understand both the information that the individual attention heads are capturing, as well as get a better determination of whether a text is anomalous. Unfortunately, due to computational constraints this will have to wait until later. 
