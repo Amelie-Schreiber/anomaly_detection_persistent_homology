@@ -8,10 +8,11 @@ Detecting anomalous texts with persistent homology of context vectors computed b
 3. Use the distance matrix to compute persistent homology and a persistence diagram for the text.
 4. Do this for multiple baseline texts on the same topic.
 5. Compute the Fréchet mean of the baseline texts persistence diagrams.
-6. Find outliers (and potentially remove those with large Wasserstein distance from the Fréchet mean). 
-7. Compute persistent homology and persistence diagrams for new potentially anomalous texts.
-8. Compute the Wasserstein distances between the potentially anomalous texts persistence diagrams and the Fréchet mean of the baseline texts persistence diagrams.
-9. Find outlier Wasserstein distances and classify the corresponding texts as anomalous. 
+6. Find outliers.
+7. Removing those outliers with large Wasserstein distance from the Fréchet mean may improve results but this is not done in the notebooks. 
+8. Compute persistent homology and persistence diagrams for new potentially anomalous texts.
+9. Compute the Wasserstein distances between the potentially anomalous texts persistence diagrams and the Fréchet mean of the baseline texts persistence diagrams.
+10. Find outlier Wasserstein distances and classify the corresponding texts as anomalous. 
 
 ## Some Heuristics and Guiding Principles
 
