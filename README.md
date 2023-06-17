@@ -7,4 +7,4 @@ We must note that this form of anomalous text detection is not perfect, and as s
 
 ## Next Steps
 
-The next ovious thing to do would be to perform this analysis on all attention heads, and then determine what percentage of them classifies a given text as anomalous. This can help us better understand both the information that the individual attention heads are capturing, as well as get a better determination of whether a text is anomalous. Unfortunately, due to computational constraints this will have to wait until later. 
+The next obvious thing to do would be to perform this analysis on all attention heads, and then determine what percentage of them classifies a given text as anomalous. This can help us better understand both the information that the individual attention heads are capturing, as well as get a better determination of whether a text is anomalous. Unfortunately, due to computational constraints this will have to wait until later. 
