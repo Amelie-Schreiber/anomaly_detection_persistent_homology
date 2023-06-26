@@ -3,8 +3,8 @@ Detecting anomalous texts with persistent homology of context vectors computed b
 
 ## Methods
 
-1. Compute the context vectors of some input text for s pecific `head` in a specific `layer` of a language model.
-2. Compute the pairwise Euclidean distances between them.
+1. Compute the context vectors (or attention probability distributions, or hidden states) of some input text for a specific `head` in a specific `layer` of a language model (or just the layer for hidden states).
+2. Compute the pairwise Euclidean distances between them (or the Jensen-Shannon distance or KL-divergence for attention probability distributions).
 3. Use the distance matrix to compute persistent homology and a persistence diagram for the text.
 4. Do this for multiple baseline texts on the same topic.
 5. Compute the Fréchet mean of the baseline texts persistence diagrams.
